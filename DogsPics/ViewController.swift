@@ -9,12 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var dogImageViewOutlet: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        DogApi.requestRandomImage(completionHandler: handleRandomImageResponse(imageData:error:))
     }
-
-
+    
+    func handleImageFileResponse(image: UIImage? , error: Error?) {
+        DispatchQueue.main.async {
+            self.dogImageViewOutlet.image = image
+        }
+        
+    }
+    
+    func handleRandomImageResponse(imageData: DogImages?, error: Error?) {
+        guard  let imageURL = URL(string: imageData?.message ?? "" ) else {
+            return
+        }
+        DogApi.requestImageFile(url: imageURL, completionHandler:self.handleImageFileResponse(image:error:))
+        
+    }
 }
-
+    
