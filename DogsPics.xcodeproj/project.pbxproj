@@ -15,6 +15,7 @@
 		0B50493E249659920021A03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B50493D249659920021A03B /* Assets.xcassets */; };
 		0B504941249659920021A03B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B50493F249659920021A03B /* LaunchScreen.storyboard */; };
 		0B50494A24965A2D0021A03B /* DogApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50494924965A2D0021A03B /* DogApi.swift */; };
+		0B539D6D24A755DA00A0BE8A /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B539D6C24A755DA00A0BE8A /* BreedsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0B504940249659920021A03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B504942249659920021A03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B50494924965A2D0021A03B /* DogApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApi.swift; sourceTree = "<group>"; };
+		0B539D6C24A755DA00A0BE8A /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				0B50494924965A2D0021A03B /* DogApi.swift */,
 				0B00BCE8249F3E5600119358 /* DogImages.swift */,
+				0B539D6C24A755DA00A0BE8A /* BreedsList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				0B504939249659900021A03B /* ViewController.swift in Sources */,
 				0B504935249659900021A03B /* AppDelegate.swift in Sources */,
+				0B539D6D24A755DA00A0BE8A /* BreedsList.swift in Sources */,
 				0B504937249659900021A03B /* SceneDelegate.swift in Sources */,
 				0B00BCE9249F3E5600119358 /* DogImages.swift in Sources */,
 				0B50494A24965A2D0021A03B /* DogApi.swift in Sources */,
